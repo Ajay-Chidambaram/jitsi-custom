@@ -1,0 +1,3 @@
+plugins: {
+      "background-color-plugin": {}
+}
