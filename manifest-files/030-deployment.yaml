@@ -91,7 +91,7 @@ spec:
             - name: JVB_TCP_HARVESTER_DISABLED
               value: "true"
         - name: web
-          image: chidambaram27/jitsi-custom:1
+          image: chidambaram27/jitsi-custom:3
           imagePullPolicy: IfNotPresent
           env:
             - name: XMPP_SERVER
