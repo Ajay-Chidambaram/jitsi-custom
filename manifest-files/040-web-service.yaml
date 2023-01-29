@@ -6,6 +6,7 @@ metadata:
   name: web
   namespace: jitsi
 spec:
+  type: NodePort
   ports:
   - name: "http"
     port: 80
