@@ -52,6 +52,8 @@ spec:
           image: jitsi/prosody:stable-6826
           imagePullPolicy: IfNotPresent
           env:
+            - name: PUBLIC_URL
+              value: "http://meet.learning.cluster.ws"
             - name: XMPP_DOMAIN
               value: meet.jitsi
             - name: XMPP_AUTH_DOMAIN
@@ -87,6 +89,8 @@ spec:
           image: chidambaram27/jitsi-custom:4
           imagePullPolicy: IfNotPresent
           env:
+            - name: PUBLIC_URL
+              value: "http://meet.learning.cluster.ws"
             - name: XMPP_SERVER
               value: localhost
             - name: JICOFO_AUTH_USER
