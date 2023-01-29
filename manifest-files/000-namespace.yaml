@@ -4,3 +4,9 @@ metadata:
   name: jitsi
   labels:
     name: jitsi
+---
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: jitsi
+  namespace: jitsi
