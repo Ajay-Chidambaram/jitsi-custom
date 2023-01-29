@@ -1,13 +1,12 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: "jitsi-ingress"
-  namespace: "jitsi"
+  name: jitsi-ingress
+  namespace: jitsi
   annotations:
     kubernetes.io/ingress.class: alb
     alb.ingress.kubernetes.io/scheme: internet-facing
 spec:
-  ingressClassName: alb
   rules:
     - http:
         paths:
