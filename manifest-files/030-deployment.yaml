@@ -22,6 +22,8 @@ spec:
           image: jitsi/jicofo:stable-6826
           imagePullPolicy: IfNotPresent
           env:
+            - name: ENABLE_XMPP_WEBSOCKET
+              value: "0"
             - name: PUBLIC_URL
               value: "http://meet.learning.cluster.ws"
             - name: XMPP_SERVER
@@ -54,6 +56,8 @@ spec:
           image: jitsi/prosody:stable-6826
           imagePullPolicy: IfNotPresent
           env:
+            - name: ENABLE_XMPP_WEBSOCKET
+              value: "0"
             - name: PUBLIC_URL
               value: "http://meet.learning.cluster.ws"
             - name: XMPP_DOMAIN
@@ -91,6 +95,8 @@ spec:
           image: chidambaram27/jitsi-custom:4
           imagePullPolicy: IfNotPresent
           env:
+            - name: ENABLE_XMPP_WEBSOCKET
+              value: "0"
             - name: PUBLIC_URL
               value: "http://meet.learning.cluster.ws"
             - name: XMPP_SERVER
@@ -115,6 +121,8 @@ spec:
           image: jitsi/jvb:stable-6826
           imagePullPolicy: IfNotPresent
           env:
+            - name: ENABLE_XMPP_WEBSOCKET
+              value: "0"
             - name: PUBLIC_URL
               value: "http://meet.learning.cluster.ws"
             - name: XMPP_SERVER
