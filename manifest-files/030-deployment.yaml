@@ -22,6 +22,8 @@ spec:
           image: jitsi/jicofo:stable-6826
           imagePullPolicy: IfNotPresent
           env:
+            - name: PUBLIC_URL
+              value: "http://meet.learning.cluster.ws"
             - name: XMPP_SERVER
               value: localhost
             - name: XMPP_DOMAIN
@@ -113,6 +115,8 @@ spec:
           image: jitsi/jvb:stable-6826
           imagePullPolicy: IfNotPresent
           env:
+            - name: PUBLIC_URL
+              value: "http://meet.learning.cluster.ws"
             - name: XMPP_SERVER
               value: localhost
             - name: DOCKER_HOST_ADDRESS
