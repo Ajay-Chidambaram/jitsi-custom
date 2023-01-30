@@ -23,7 +23,7 @@ spec:
           imagePullPolicy: IfNotPresent
           env:
             - name: ENABLE_XMPP_WEBSOCKET
-              value: "0"
+              value: "1"
             - name: PUBLIC_URL
               value: "http://meet.learning.cluster.ws"
             - name: XMPP_SERVER
@@ -57,7 +57,7 @@ spec:
           imagePullPolicy: IfNotPresent
           env:
             - name: ENABLE_XMPP_WEBSOCKET
-              value: "0"
+              value: "1"
             - name: PUBLIC_URL
               value: "http://meet.learning.cluster.ws"
             - name: XMPP_DOMAIN
@@ -96,7 +96,7 @@ spec:
           imagePullPolicy: IfNotPresent
           env:
             - name: ENABLE_XMPP_WEBSOCKET
-              value: "0"
+              value: "1"
             - name: PUBLIC_URL
               value: "http://meet.learning.cluster.ws"
             - name: XMPP_SERVER
@@ -122,7 +122,7 @@ spec:
           imagePullPolicy: IfNotPresent
           env:
             - name: ENABLE_XMPP_WEBSOCKET
-              value: "0"
+              value: "1"
             - name: PUBLIC_URL
               value: "http://meet.learning.cluster.ws"
             - name: XMPP_SERVER
